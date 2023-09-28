@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+      }
+
+      .nav-links.header {
+        background-color: #333;
+        padding: 1rem;
+        color: white;
+      }
+
+      header a {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      header ul {
+        display: flex;
+        gap: 1rem;
+        list-style: none;
+      }
+
+      .container {
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+      }
+
+      main {
+        margin-top: 2rem;
+      }
+
+      .project {
+        border: 1px solid;
+        margin-bottom: 1rem;
+        padding: 1rem;
+      }
+
+      .font-bold {
+        font-weight: bold;
+      }
+
+      .underline {
+        text-decoration: underline;
+      }
+
+      .text-red {
+        color: red;
+      }
+
+      .capitalize {
+        text-transform: capitalize;
+      }
+
+      .tabs {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .tab {
+        border: 1px solid;
+        /* padding: 1rem; */
+        /* top right bottom left */
+        /* padding: .5rem 1rem .5rem 1rem; */
+        padding: 0.5rem 1rem;
+        border-radius: 0.5rem;
+      }
+
+      /* .nav-links .active {
+            color: red;
+        }
+
+        .container .project.active {
+            border: 2px solid red;
+        }
+
+        .tab.active {
+            background-color: red;
+            background-color: rgb(255, 0, 0);
+            background-color: #f4cccc;
+            background-color: rgb(232, 240, 254);
+            color: rgb(25, 103, 210);
+            cursor: pointer;
+        } */
+
+      a {
+        color: red;
+      }
+
+      div.active {
+        border: 1px solid red;
+      }
+
+      p.tab.active {
+        background-color: rgb(232, 240, 254);
+        color: rgb(25, 103, 210);
+        cursor: pointer;
+      }
+      .active {
+        border: 2px solid red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="nav-links header">
+      <nav class="">
+        <ul>
+          <li><a href="#" class="active">home</a></li>
+          <li><a href="#">contact</a></li>
+          <li><a href="#">about us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="container">
+      <div class="project active">
+        <header class="header">
+          <h2 class="text-red capitalize">git</h2>
+          <p class="font-bold underline">3days</p>
+        </header>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+          est itaque culpa. <span class="font-bold">Dolorem</span> officia
+          nostrum quaerat itaque at, tempora sequi nobis nam perferendis modi
+          commodi nihil voluptas necessitatibus animi illo.
+        </p>
+      </div>
+      <div class="project">
+        <header>
+          <h2>git</h2>
+          <p class="font-bold">3days</p>
+        </header>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+          est itaque culpa. Dolorem officia nostrum quaerat itaque at, tempora
+          sequi nobis nam perferendis modi commodi nihil voluptas necessitatibus
+          animi illo.
+        </p>
+      </div>
+      <div class="project">
+        <header>
+          <h2>git</h2>
+          <p class="active">3days</p>
+        </header>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+          est itaque culpa. Dolorem officia nostrum q<span
+            class="font-bold underline text-red"
+            >uaerat itaque at, tempora sequi nobis
+          </span>
+          nam perferendis modi commodi nihil voluptas necessitatibus animi illo.
+        </p>
+      </div>
+      <ul>
+        <li><a href="#">youteubve</a></li>
+        <li><a href="#">youteubve</a></li>
+        <li><a href="#">youteubve</a></li>
+      </ul>
+    </main>
+
+    <div class="tabs container">
+      <p class="tab active">Image</p>
+      <p class="tab">Video</p>
+      <p class="tab">News</p>
+    </div>
+  </body>
+</html>
