@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&family=Poppins:wght@300&family=Roboto+Condensed:wght@300;400&family=Rubik:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="container">
+      <div class="logo-wrapper">
+        <img src="./assets/images/logo.png" alt="logo.png" class="logo" />
+        <p class="logo-text">Lasles<span class="font-bold">VPN</span></p>
+      </div>
+
+      <img
+        onclick="document.getElementById('sidebar').classList.add('active')"
+        src="./assets/images/menu.svg"
+        alt="menu.svg"
+        class="hamburger-icon"
+      />
+
+      <div class="sidebar" id="sidebar">
+        <button
+          id="cross-button"
+          onclick="document.getElementById('sidebar').classList.remove('active')"
+        >
+          <img src="./assets/images/cross.svg" alt="cross.svg" />
+        </button>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Help</a></li>
+        </ul>
+
+        <ul class="buttons">
+          <li><button>Sign In</button></li>
+          <li><button>Sign Up</button></li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="banner">
+        <div>
+          <p>Want anything to be easy with LaslesVPN.</p>
+          <p>
+            Provide a network for all your needs with ease and fun using
+            LaslesVPN discover interesting features from us.
+          </p>
+          <button>Get Started</button>
+        </div>
+        <div>
+          <img src="./assets/images/banner.png" alt="banner.png" />
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
