@@ -11,6 +11,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="container">
@@ -33,7 +40,7 @@
         >
           <img src="./assets/images/cross.svg" alt="cross.svg" />
         </button>
-        <ul>
+        <ul class="nav-links">
           <li><a href="#">About</a></li>
           <li><a href="#">Features</a></li>
           <li><a href="#">Pricing</a></li>
@@ -42,8 +49,8 @@
         </ul>
 
         <ul class="buttons">
-          <li><button>Sign In</button></li>
-          <li><button>Sign Up</button></li>
+          <li><button class="btn">Sign In</button></li>
+          <li><button class="btn btn-outline">Sign Up</button></li>
         </ul>
       </div>
     </header>
@@ -62,6 +69,189 @@
           <img src="./assets/images/banner.png" alt="banner.png" />
         </div>
       </section>
+    </main>
+    <footer class="container" id="first-pg">
+      <div class="wrapper">
+        <div class="users">
+          <img src="./assets/images/user.png" alt="user.png" />
+          <p><span class="font-bold">90+</span><br />Users</p>
+        </div>
+        <div class="users">
+          <img src="./assets/images/location.png" alt="location.png" />
+          <p><span class="font-bold">30+</span><br />Locations</p>
+        </div>
+        <div class="users">
+          <img src="./assets/images/Server.png" alt="server.png" />
+          <p><span class="font-bold">50+</span><br />Servers</p>
+        </div>
+      </div>
+    </footer>
+    <main>
+      <div class="container">
+        <div class="container-box">
+          <div class="left">
+            <img src="./assets/images/user2.png" alt="user2.png" />
+          </div>
+          <div class="right">
+            <div class="right-wrapper">
+              <div>
+                <p>We Provide Many Features You Can Use</p>
+                <p>
+                  You can explore the features that we provide with fun and have
+                  their own functions each feature.
+                </p>
+              </div>
+              <div>
+                <div class="item-list">
+                  <img src="./assets/images/tick.png" alt="tick.png" />
+                  <p>Powerfull online protection.</p>
+                  <!-- <p>paint me red</p> -->
+                </div>
+                <div class="item-list">
+                  <img src="./assets/images/tick.png" alt="tick.png" />
+                  <p>Internet without borders.</p>
+                </div>
+                <div class="item-list">
+                  <img src="./assets/images/tick.png" alt="tick.png" />
+                  <p>Supercharged VPN</p>
+                </div>
+                <div class="item-list">
+                  <img src="./assets/images/tick.png" alt="tick.png" />
+                  <p>No specific time limits.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="choose-plan-text">
+          <p>Choose Your Plan</p>
+          <p>
+            Let's choose the package that is best for you and explore it happily
+            and cheerfully.
+          </p>
+        </div>
+        <div class="plans">
+          <div class="plan-box">
+            <div class="first-section">
+              <div class="img">
+                <img src="./assets/images/Free.svg" alt="free.svg" />
+              </div>
+              <p>Free Plan</p>
+              <div class="features">
+                <div class="feature-box">
+                  <i class="fa-solid fa-check"></i>
+                  <p>Unlimited Bandwidth</p>
+                </div>
+                <div class="feature-box">
+                  <i class="fa-solid fa-check"></i>
+                  <p>Encrypted Connection</p>
+                </div>
+                <div class="feature-box">
+                  <i class="fa-solid fa-check"></i>
+                  <p>No Traffic Logs</p>
+                </div>
+                <div class="feature-box">
+                  <i class="fa-solid fa-check"></i>
+                  <p>Work on All Devices</p>
+                </div>
+              </div>
+            </div>
+            <div class="last-section">
+              <p class="font-bold">Free</p>
+              <button>Select</button>
+            </div>
+          </div>
+          <div class="plan-box">
+            <div class="first-section">
+              <div class="img">
+                <img src="./assets/images/Free.svg" alt="free.svg" />
+              </div>
+              <p>Standard Plan</p>
+              <div class="features">
+                <div class="feature-box">
+                  <i class="fa-solid fa-check"></i>
+                  <p>Unlimited Bandwidth</p>
+                </div>
+                <div class="feature-box">
+                  <i class="fa-solid fa-check"></i>
+                  <p>Encrypted Connection</p>
+                </div>
+                <div class="feature-box">
+                  <i class="fa-solid fa-check"></i>
+                  <p>Yes, Traffic Logs</p>
+                </div>
+                <div class="feature-box">
+                  <i class="fa-solid fa-check"></i>
+                  <p>Work on All Devices</p>
+                </div>
+                <div class="feature-box">
+                  <i class="fa-solid fa-check"></i>
+                  <p>Connect Anywhere</p>
+                </div>
+              </div>
+            </div>
+            <div class="last-section">
+              <p>$9 <span class="font-normal">/ mo</span></p>
+              <button>Select</button>
+            </div>
+          </div>
+          <div class="plan-box">
+            <div class="first-section">
+              <div class="img">
+                <img src="./assets/images/Free.svg" alt="free.svg" />
+              </div>
+              <p>Premium Plan</p>
+              <div class="features">
+                <div class="feature-box">
+                  <i class="fa-solid fa-check"></i>
+                  <p>Unlimited Bandwidth</p>
+                </div>
+                <div class="feature-box">
+                  <i class="fa-solid fa-check"></i>
+                  <p>Encrypted Connection</p>
+                </div>
+                <div class="feature-box">
+                  <i class="fa-solid fa-check"></i>
+                  <p>Yes, Traffic Logs</p>
+                </div>
+                <div class="feature-box">
+                  <i class="fa-solid fa-check"></i>
+                  <p>Work on All Devices</p>
+                </div>
+                <div class="feature-box">
+                  <i class="fa-solid fa-check"></i>
+                  <p>Connect Anywhere</p>
+                </div>
+                <div class="feature-box">
+                  <i class="fa-solid fa-check"></i>
+                  <p>Get New Features</p>
+                </div>
+              </div>
+            </div>
+            <div class="last-section">
+              <p>$12 <span class="font-normal">/ mo</span></p>
+              <button>Select</button>
+            </div>
+          </div>
+        </div>
+        <div class="container">
+          <div class="box3">
+            <div class="top-div">
+              <p class="font-600">Huge Global Network of Fast VPN</p>
+              <p>
+                See <span class="font-600">LaslesVPN</span> everywhere to make
+                it easier for you when you move locations.
+              </p>
+            </div>
+            <div class="bottom-div">
+              <img
+                src="./assets/images/huge-global.jpg"
+                alt="huge-global.jpg"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
