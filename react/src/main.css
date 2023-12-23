@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+body{
+    background-color: tomato;
+}
+
+.card{
+    width: 600px;
+    border: 1px solid;
+    padding: .5rem;
+    margin-bottom: 5px;
+}
+
+.title{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-block-end: 5px;
+}
+
+/* .users{
+    display: flex;
+    align-items: center;
+} */
+
+img{
+    border-radius: 50%;
+}
+
+
+
+th,td{
+    border: 1px solid black;
+    padding: 1rem;
+}
+
+.bg-green{
+    background-color: green;
+    color: white;
+}
+
+.bg-red{
+    background-color: red;
+    color: white;
+}
+
+.bg-yellow {
+    background-color: yellow;
+    color: blue;
+}
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+/* .btn{
+    background-color: gray;
+    color: white;
+    border: 1px solid;
+} */
+
+/* tailwind css way below */
+
+@layer components{
+    .btn{
+        @apply px-3 py-2 text-white bg-slate-500 border border-black rounded-xl ml-2
+    }
+}
